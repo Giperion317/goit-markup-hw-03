@@ -55,6 +55,8 @@ body{
 
 /* --components-- */
 .logo {
+    margin-right: 93px;
+
     font-family: var(--secondory-font);
     font-weight: 700;
     font-size: 26px;
@@ -80,24 +82,65 @@ body{
 
 /* --page header-- */
 
+
+.pape-header-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    }
+
+.menu{
+    display: flex;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .menu-link{
+    display: block;
+
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: inherit;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
 .menu-link:hover,
 .menu-link:focus{
     color: var(--accent-color);
 }
+
 .menu .menu-link.curent {
     color: var(--accent-color);
 }
+
+.contact-header{
+    display: flex;
+}
+
+.contact-header-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .contact-header-link{
+    display: block;
+
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contact-header-link:hover,
 .contact-header-link:focus{
@@ -170,6 +213,17 @@ body{
 
 .page-footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-footer{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .contact-link{
