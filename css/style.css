@@ -363,9 +363,8 @@ body{
 }
 
 .portfolio-works-item-wrapper{
-    border: 1px solid #EEEEEE;
-    border-top: none;
-
+    border-bottom: 1px solid #EEEEEE;
+    
     padding: 20px 24px;
 }
 
