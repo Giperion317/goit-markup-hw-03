@@ -217,7 +217,7 @@ body{
 /* --section credo-- */
 
 .section-credo{
-    padding-top: 94px;
+    padding-bottom: 0;
 }
 
 .credo{
