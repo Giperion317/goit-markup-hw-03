@@ -157,18 +157,28 @@ body{
 
 /* --section hero-- */
 .hero{
+    text-align: center;
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
+
 .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondory-color);
+    margin-bottom: 30px;
 }
+
+.hero-title-item{
+    display: block;
+}
+
 .hero-button{
+    min-width: 200px;
     font-family: inherit;
     font-weight: 700;
     line-height: 1.88;
@@ -176,6 +186,9 @@ body{
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--secondory-color);
+    border-radius: 4px;
+
+    padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -345,4 +358,5 @@ body{
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
 /* --/section portfolio--  */
