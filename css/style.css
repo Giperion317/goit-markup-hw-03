@@ -31,6 +31,7 @@ img{
 .list{
     list-style: none;
 }
+
 .link{
     text-decoration: none;
 }
@@ -85,6 +86,20 @@ body{
 
     margin-bottom: 50px;
 }
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* --/components-- */
 
 /* --page header-- */
@@ -156,6 +171,7 @@ body{
 /* --/page header-- */
 
 /* --section hero-- */
+
 .hero{
     text-align: center;
     background-color: #2F303A;
@@ -255,6 +271,7 @@ body{
 /* /--section work-- */
 
 /* --section our team-- */
+
 .our-team-section{
     background-color: #F5F4FA;
 }
@@ -297,6 +314,78 @@ body{
 
 /* --/section our team-- */
 
+/* --section portfolio--  */
+
+.portfolio-navigation {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.portfolio-navigation-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-navigation-button {
+    min-width: 73px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.63;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    color: inherit;
+    border-radius: 4px;
+
+    padding: 6px 22px;
+}
+
+.portfolio-navigation-button:hover,
+.portfolio-navigation-button:focus {
+    background-color: var(--accent-color);
+    color: var(--secondory-color);
+}
+
+.portfolio-works {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.portfolio-works-item {
+    flex-basis: calc((100% - 90px) / 3);
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-works-item-wrapper{
+    border: 1px solid #EEEEEE;
+    border-top: none;
+
+    padding: 20px 24px;
+}
+
+.portfolio-works-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+}
+
+.portfolio-works-item-text {
+    line-height: 1.86;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/* --/section portfolio--  */
+
 /* --footer-- */
 
 .page-footer{
@@ -321,9 +410,11 @@ body{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .adress-text {
     color: var(--secondory-color);
 }
+
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
@@ -331,32 +422,3 @@ body{
 
 /* --/footer-- */
 
-/* --section portfolio--  */
-
-.portfolio-navigation-button{
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.63;
-    cursor: pointer;
-    letter-spacing: 0.03em;
-    background-color: #F5F4FA;
-    color: inherit;
-}
-.portfolio-navigation-button:hover,
-.portfolio-navigation-button:focus{
-    background-color: var(--accent-color);
-    color: var(--secondory-color);
-}
-.portfolio-works-item-title{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.portfolio-works-item-text{
-    line-height: 1.86;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
-
-/* --/section portfolio--  */
