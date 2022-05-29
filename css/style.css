@@ -186,11 +186,33 @@ body{
 /* --/section hero-- */
 
 /* --section credo-- */
+
+.section-credo{
+    padding-top: 94px;
+}
+
+.credo{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.credo-item{
+    flex-basis: calc((100% - 120px) / 4);
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .credo-title{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 .credo-text{
     font-size: 14px;
