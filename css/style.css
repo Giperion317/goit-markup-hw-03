@@ -105,6 +105,10 @@ body{
 
 /* --page header-- */
 
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
+
 .pape-header-conteiner{
     display: flex;
     align-items: center;
@@ -176,8 +180,6 @@ body{
 .hero{
     text-align: center;
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 .hero-title{
@@ -218,10 +220,6 @@ body{
 
 /* --section credo-- */
 
-.section-credo{
-    padding-bottom: 0;
-}
-
 .credo{
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +252,9 @@ body{
 /* --/section credo-- */
 
 /* --section work-- */
+.section-work{
+    padding-top: 0;
+}
 
 .work{
     display: flex;
@@ -366,6 +367,8 @@ body{
 }
 
 .portfolio-works-item-wrapper{
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     
     padding: 20px 24px;
@@ -399,6 +402,7 @@ body{
 .logo-footer{
     display: block;
     margin-bottom: 20px;
+    margin-right: 0;
 }
 
 .contact-item:not(:last-child){
